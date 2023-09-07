@@ -10,7 +10,7 @@ cmap = ListedColormap(['#FF0000','#00FF00','#0000FF'])
 iris = datasets.load_iris()
 X, y = iris.data, iris.target
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1234)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1811)
 
 plt.figure()
 plt.scatter(X[:,2],X[:,3], c=y, cmap=cmap, edgecolor='k', s=20)
